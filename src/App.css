@@ -62,6 +62,13 @@ body::-webkit-scrollbar-thumb {
     background-clip: padding-box;
 }
 
+h1,
+h2,
+h3 {
+    padding: 0;
+    margin: 0;
+}
+
 .navbar {
     position: fixed;
     /* Make it stick/fixed */
@@ -232,4 +239,16 @@ body::-webkit-scrollbar-thumb {
     transition: var(--transition);
     pointer-events: none;
     user-select: none;
+}
+
+
+/* hero  */
+
+.name-heading {
+    font-size: clamp(40px, 8vw, 80px);
+}
+
+.sub-heading {
+    font-size: clamp(40px, 8vw, 80px);
+    line-height: 0.9;
 }

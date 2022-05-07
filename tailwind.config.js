@@ -5,6 +5,7 @@ module.exports = {
 			fontFamily: {
 				roboto: ["Roboto", "sans-serif"],
 				sfMonoRegular: ["SFmonoRegular", "Roboto", "sans-serif"],
+				calibreRegular: ["calibreRegular", "Roboto", "sans-serif"],
 			},
 			colors: {
 				"theme-blue-base": "#172a45",
