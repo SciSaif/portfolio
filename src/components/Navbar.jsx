@@ -58,8 +58,8 @@ function Navbar({toggle}) {
 					<div className="p-[10px]  font-poppins mx-1 cursor-pointer hover:text-theme-green">
 						<span className="text-theme-green">04. </span> Contact
 					</div>
-					<div className="resume ml-4 px-[16px] py-[12px]n border border-theme-green hover:bg-theme-green/10 rounded flex items-center text-theme-green">
-						<a target="_blank" href="/" className="">
+					<div className="resume ml-4  border border-theme-green hover:bg-theme-green/10 cursor-pointer rounded flex items-center text-theme-green">
+						<a target="_blank" href="/" className="px-[16px] py-[12px]">
 							Resume
 						</a>
 					</div>
@@ -86,8 +86,8 @@ function Navbar({toggle}) {
 						<div className="p-[10px] flex flex-col justify-center  items-center  font-poppins mx-1 cursor-pointer hover:text-theme-green">
 							<div className="text-theme-green ">04. </div> <div className="mb-2 mt-1">Contact</div>
 						</div>
-						<div className=" px-[50px] py-[18px] mt-9 border border-theme-green rounded flex  items-center text-theme-green">
-							<a target="_blank" href="/" className="">
+						<div className="  mt-9 border border-theme-green rounded flex  items-center text-theme-green">
+							<a target="_blank" href="/" className="px-[50px] py-[18px]">
 								Resume
 							</a>
 						</div>

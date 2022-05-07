@@ -252,3 +252,7 @@ h3 {
     font-size: clamp(40px, 8vw, 80px);
     line-height: 0.9;
 }
+
+.bio {
+    line-height: 1.3;
+}
