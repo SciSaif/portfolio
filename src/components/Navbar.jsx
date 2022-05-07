@@ -8,7 +8,7 @@ function useOutsideAlerter(ref, toggleDrawer) {
 		 */
 		function handleClickOutside(event) {
 			// handle if clicked on menuBtn
-			if (event.target.classList.contains("ham-box") || event.target.classList.contains("menuBtn")) {
+			if (event.target.classList.contains("ham-box") || event.target.classList.contains("menuBtn") || event.target.classList.contains("ham-box-inner")) {
 				return;
 			}
 			if (ref.current.classList.contains("drawer-hidden")) {
@@ -29,10 +29,12 @@ function useOutsideAlerter(ref, toggleDrawer) {
 
 function Navbar({toggle}) {
 	const drawerRef = useRef(false);
+	const hamRef = useRef(false);
 
 	const toggleDrawer = () => {
 		drawerRef.current.classList.toggle("drawer-visible");
 		drawerRef.current.classList.toggle("drawer-hidden");
+		hamRef.current.classList.toggle("cross");
 		toggle();
 	};
 	useOutsideAlerter(drawerRef, toggleDrawer);
@@ -66,7 +68,7 @@ function Navbar({toggle}) {
 				{/* mobile nav menu button */}
 				<button className="menuBtn sm:hidden" onClick={toggleDrawer}>
 					<div className="ham-box">
-						<div className="ham-box-inner"></div>
+						<div className="ham-box-inner" ref={hamRef}></div>
 					</div>
 				</button>
 

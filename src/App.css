@@ -158,6 +158,36 @@ body::-webkit-scrollbar-thumb {
 }
 
 
+/* for btn animations */
+
+.ham-box-inner.cross::before {
+    width: 100%;
+    /* top: -px; */
+    opacity: 0;
+    transform: rotate(90deg);
+    transition: var(--ham-before-active);
+}
+
+.ham-box-inner.cross::after {
+    width: 100%;
+    bottom: 0px;
+    transform: rotate(90deg);
+    transition: var(--ham-after-active);
+}
+
+.ham-box-inner.cross {
+    position: absolute;
+    top: 50%;
+    right: 0px;
+    width: var(--hamburger-width);
+    height: 2px;
+    border-radius: var(--border-radius);
+    background-color: var(--green);
+    transition: transform 0.22s cubic-bezier(0.55, 0.055, 0.675, 0.19) 0s;
+    transform: rotate(135deg);
+}
+
+
 /* drawer */
 
 .drawer {
