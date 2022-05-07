@@ -58,7 +58,7 @@ function Navbar({toggle}) {
 					<div className="p-[10px]  font-poppins mx-1 cursor-pointer hover:text-theme-green">
 						<span className="text-theme-green">04. </span> Contact
 					</div>
-					<div className="ml-4 px-[16px] py-[12px]n border border-theme-green rounded flex items-center text-theme-green">
+					<div className="resume ml-4 px-[16px] py-[12px]n border border-theme-green hover:bg-theme-green/10 rounded flex items-center text-theme-green">
 						<a target="_blank" href="/" className="">
 							Resume
 						</a>

@@ -86,6 +86,10 @@ body::-webkit-scrollbar-thumb {
     user-select: auto !important;
 }
 
+.resume {
+    transition: background-color 0.25s;
+}
+
 
 /* mobile menu button */
 
