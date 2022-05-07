@@ -1,5 +1,31 @@
-import React, {useRef} from "react";
+import React, {useRef, useEffect} from "react";
 import logo from "../assets/logo-42.png";
+
+function useOutsideAlerter(ref, toggleDrawer) {
+	useEffect(() => {
+		/**
+		 * Alert if clicked on outside of element
+		 */
+		function handleClickOutside(event) {
+			// handle if clicked on menuBtn
+			if (event.target.classList.contains("ham-box") || event.target.classList.contains("menuBtn")) {
+				return;
+			}
+			if (ref.current.classList.contains("drawer-hidden")) {
+				return;
+			}
+			if (ref.current && !ref.current.contains(event.target)) {
+				toggleDrawer();
+			}
+		}
+		// Bind the event listener
+		document.addEventListener("mousedown", handleClickOutside);
+		return () => {
+			// Unbind the event listener on clean up
+			document.removeEventListener("mousedown", handleClickOutside);
+		};
+	}, [ref]);
+}
 
 function Navbar({toggle}) {
 	const drawerRef = useRef(false);
@@ -9,6 +35,7 @@ function Navbar({toggle}) {
 		drawerRef.current.classList.toggle("drawer-hidden");
 		toggle();
 	};
+	useOutsideAlerter(drawerRef, toggleDrawer);
 
 	return (
 		<header className="navbar h-[100px] px-[25px] md:px-[40px] lg:px-[50px] flex justify-between items-center text-theme-lightest-slate font-sfMonoRegular ">
