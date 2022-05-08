@@ -14,11 +14,22 @@
         @font-face {
             font-family: SFmonoRegular;
             src: url(fonts/SFMono/SFMono-Regular.woff);
+            src: url('webfont.eot');
+            /* IE9 Compat Modes */
+            src: url(fonts/SFMono/SFMono-Regular.woff2) format('woff2'), /* Super Modern Browsers */
+            url(fonts/SFMono/SFMono-Regular.woff) format('woff'), /* Pretty Modern Browsers */
+            url(fonts/SFMono/SFMono-Regular.ttf) format('truetype'), /* Safari, Android, iOS */
+            url(fonts/Calibre/) format('truetype'), /* Safari, Android, iOS */
         }
         
         @font-face {
             font-family: calibreRegular;
-            src: url(fonts/Calibre/Calibre-Regular.woff);
+            src: url(fonts/Calibre/Calibre-Regular.woff2) format('woff2'), url(fonts/Calibre/Calibre-Regular.woff) format('woff'), url(fonts/Calibre/Calibre-Regular.ttf) format('truetype');
+        }
+        
+        @font-face {
+            font-family: calibreSemiBold;
+            src: url(fonts/Calibre/Calibre-Semibold) format('woff2'), url(fonts/Calibre/Calibre-Semibold.woff) format('woff'), url(fonts/Calibre/Calibre-Semibold.ttf) format('truetype');
         }
     </style>
 

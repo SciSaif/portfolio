@@ -6,6 +6,7 @@ module.exports = {
 				roboto: ["Roboto", "sans-serif"],
 				sfMonoRegular: ["SFmonoRegular", "Roboto", "sans-serif"],
 				calibreRegular: ["calibreRegular", "Roboto", "sans-serif"],
+				calibreSemiBold: ["calibreSemiBold", "Roboto", "sans-serif"],
 			},
 			colors: {
 				"theme-blue-base": "#172a45",
