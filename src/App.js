@@ -3,6 +3,7 @@ import Left from "./components/Left";
 import Navbar from "./components/Navbar";
 import About from "./sections/About";
 import Hero from "./sections/Hero";
+import Skills from "./sections/Skills";
 
 function App() {
 	const mainRef = useRef(false);
@@ -16,6 +17,7 @@ function App() {
 			<main className="h-screen px-[25px] sm:px-[50px] md:px-[100px] lg:px-[150px]" ref={mainRef}>
 				<Hero />
 				<About />
+				<Skills />
 			</main>
 			<Navbar toggle={() => toggleBlur()} />
 		</div>

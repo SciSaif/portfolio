@@ -6,7 +6,7 @@ function About() {
 		<section className="py-[80px] sm:py-[100px] max-w-[900px]  text-white/25 flex flex-col justify-center   mx-auto font-sfMonoRegular overflow-x-hidden">
 			<div className="about-heading w-fit flex flex-row  mt-[10px] mb-[40px] ">
 				<div className="text-theme-green flex items-center text-[20px]">01. </div>
-				<h1 className="text-theme-gray-light min-w-[140px] ml-[10px] text-[32px]  flex justify-center items-center font-calibreSemiBold aboutme">About Me </h1>
+				<h1 className="text-theme-gray-light min-w-[140px] ml-[10px] text-[32px]  flex justify-center items-center font-calibreSemiBold fontFix">About Me </h1>
 			</div>
 			<div className="flex flex-col md:flex-row align-middle min-h-full text-[20px] font-calibreRegular text-theme-gray-deep font-medium ">
 				<div className="">
@@ -34,9 +34,9 @@ function About() {
 						<div className="recent-skills-skill relative mb-[10px] pl-[20px] font-sfMonoRegular text-[14px]">MongoDB</div>
 					</div>
 				</div>
-				<div className="mx-auto mt-16 md:mt-0">
-					<div class="md:ml-[55px] h-[300px] w-[300px] max-w-[300px] wrap-image ">
-						<img src={ProfilePic} alt="profile pic" />
+				<div className="mx-auto mt-16 md:mt-0 ">
+					<div className="md:ml-[55px] wrap-image w-[200px] md:w-[250px] lg:w-[300px]">
+						<img src={ProfilePic} alt="profile pic" className="" />
 					</div>
 				</div>
 			</div>

@@ -313,7 +313,7 @@ h3 {
     background-color: var(--lightest-navy);
 }
 
-.aboutme {
+.fontFix {
     transform: translateY(5px);
 }
 
@@ -341,4 +341,15 @@ h3 {
     color: var(--green);
     font-size: var(--fz-sm);
     line-height: 12px;
+}
+
+
+/* skills */
+
+.skillName {
+    transition: transform 0.25 ease-in;
+}
+
+.skillName:hover {
+    transform: translateY(-5px);
 }
