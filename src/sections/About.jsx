@@ -3,12 +3,12 @@ import ProfilePic from "../assets/saifSquare.jpg";
 
 function About() {
 	return (
-		<section className="py-[80px] sm:py-[100px] max-w-[900px]  text-white/25 mt-[200px] flex flex-col justify-center   mx-auto font-sfMonoRegular">
+		<section className="py-[80px] sm:py-[100px] max-w-[900px]  text-white/25 flex flex-col justify-center   mx-auto font-sfMonoRegular">
 			<div className="about-heading w-fit flex flex-row align-middle mt-[10px] mb-[40px]">
 				<div className="text-theme-green flex items-center text-[20px]">01. </div>
 				<h1 className="text-theme-gray-light  ml-[10px] text-[32px] flex justify-center items-center font-calibreRegular font-bold">About Me </h1>
 			</div>
-			<div className="flex flex-row align-middle min-h-full text-[20px] font-calibreRegular text-theme-gray-deep font-medium ">
+			<div className="flex flex-col md:flex-row align-middle min-h-full text-[20px] font-calibreRegular text-theme-gray-deep font-medium ">
 				<div className="">
 					<p className="mb-4">
 						Hello! My name is Saifullah Rahman and I love to solve real world problems through my codes. My interest in Web Development started back in 2019 when I bought an Alexa device
@@ -34,8 +34,8 @@ function About() {
 						<div className="recent-skills-skill relative mb-[10px] pl-[20px] font-sfMonoRegular text-[14px]">MongoDB</div>
 					</div>
 				</div>
-				<div>
-					<div class="ml-[55px] h-[300px] w-[300px] max-w-[300px] wrap-image">
+				<div className="mx-auto mt-16 md:mt-0">
+					<div class="ml-[55px] h-[300px] w-[300px] max-w-[300px] wrap-image ">
 						<img src={ProfilePic} alt="profile pic" />
 					</div>
 				</div>
