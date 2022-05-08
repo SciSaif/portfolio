@@ -35,6 +35,7 @@ function Navbar({toggle}) {
 		drawerRef.current.classList.toggle("drawer-visible");
 		drawerRef.current.classList.toggle("drawer-hidden");
 		hamRef.current.classList.toggle("cross");
+		document.body.style.overflow = document.body.style.overflow === "hidden" ? "scroll" : "hidden";
 		toggle();
 	};
 	useOutsideAlerter(drawerRef, toggleDrawer);
@@ -72,7 +73,7 @@ function Navbar({toggle}) {
 					</div>
 				</button>
 
-				<aside className="drawer drawer-hidden " ref={drawerRef}>
+				<aside className="drawer drawer-hidden" ref={drawerRef}>
 					<div className="flex-row text-[16px] ">
 						<div className="p-[10px] flex flex-col justify-center  items-center font-poppins mx-1 cursor-pointer hover:text-theme-green">
 							<div className="text-theme-green ">01. </div> <div className="mb-2 mt-1">About</div>
