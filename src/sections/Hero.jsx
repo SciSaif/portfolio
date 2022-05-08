@@ -2,7 +2,7 @@ import React from "react";
 
 function Hero() {
 	return (
-		<div className=" max-w-[1000px]  text-white/25 mt-[200px] flex flex-col justify-center   mx-auto font-sfMonoRegular">
+		<section className="h-screen max-w-[1000px]  text-white/25 flex flex-col justify-center   mx-auto font-sfMonoRegular">
 			<div className="">
 				<h1 className="text-theme-green mb-[15px] ml-[4px] ">Hi, my name is </h1>
 			</div>
@@ -16,7 +16,7 @@ function Hero() {
 					Check out my github!
 				</a>
 			</div>
-		</div>
+		</section>
 	);
 }
 

@@ -1,6 +1,7 @@
 import {useRef} from "react";
 import Left from "./components/Left";
 import Navbar from "./components/Navbar";
+import About from "./sections/About";
 import Hero from "./sections/Hero";
 
 function App() {
@@ -12,8 +13,9 @@ function App() {
 
 	return (
 		<div>
-			<main className="px-[25px] sm:px-[50px] md:px-[100px] lg:px-[150px]" ref={mainRef}>
+			<main className="h-screen px-[25px] sm:px-[50px] md:px-[100px] lg:px-[150px]" ref={mainRef}>
 				<Hero />
+				<About />
 			</main>
 			<Navbar toggle={() => toggleBlur()} />
 		</div>
