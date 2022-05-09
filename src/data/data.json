@@ -23,6 +23,10 @@
         {
             "name": "Mongo DB",
             "percent": 70
+        },
+        {
+            "name": "Python",
+            "percent": 40
         }
     ],
 
@@ -47,10 +51,7 @@
             "name": "C++",
             "percent": 85
         },
-        {
-            "name": "Python",
-            "percent": 40
-        },
+       
         {
             "name": "C#",
             "percent": 30
