@@ -24,9 +24,9 @@ const cardVariants = (percent) => {
 function Skills() {
 	return (
 		<section className="py-[80px] sm:py-[100px] max-w-[900px]   text-white/25 flex flex-col justify-center   mx-auto font-sfMonoRegular overflow-x-hidden">
-			<div className="about-heading w-fit flex flex-row  mt-[10px] mb-[40px] ">
-				<div className="text-theme-green flex items-center text-[20px]">02. </div>
-				<h1 className="text-theme-gray-light min-w-[140px] ml-[10px] text-[32px]  flex justify-center items-center font-calibreSemiBold fontFix">My Skills</h1>
+			<div className="about-heading w-fit flex flex-row   mt-[10px] mb-[40px] ">
+				<div className="text-theme-green flex items-center text-[15px] sm:text-[20px]">02. </div>
+				<h1 className="text-theme-gray-light min-w-fit ml-[10px] text-[26px] sm:text-[32px]  flex  items-center font-calibreSemiBold fontFix">My Skills</h1>
 			</div>
 			<div className="flex flex-col md:flex-row justify-center items-center md:justify-between md:items-start align-middle min-h-full text-[20px] font-calibreRegular text-theme-gray-deep font-medium ">
 				<div className="w-fit">
@@ -66,7 +66,6 @@ function Skills() {
 					</div>
 				</div>
 			</div>
-			<div className="h-[500px]"></div>
 		</section>
 	);
 }
