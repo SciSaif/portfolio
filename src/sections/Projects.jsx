@@ -38,7 +38,7 @@ function Projects() {
 							</div>
 						</div>
 					</div>
-					<div className="max-w-[60%] flex flex-col items-end h-full ">
+					<div className="max-w-[70%] md:max-w-[60%] lg:max-w-[50%] flex flex-col items-end h-full ">
 						<div className="text-theme-green my-2 font-sfMonoRegular text-[13px]">Featured Project</div>
 						<h1 className="font-calibreSemiBold text-[28px] text-theme-gray-light mb-5">JobbedIn</h1>
 						<div className="relative w-full">
@@ -47,7 +47,7 @@ function Projects() {
 							</div>
 						</div>
 						<div className=" relative w-full z-10 my-10">
-							<div className="flex flex-row flex-wrap w-[120%]    rounded text-theme-light-slate z-11">
+							<div className="flex flex-row flex-wrap justify-end   rounded text-theme-light-slate z-11">
 								<div className="ml-[20px] mb-[5px]">React</div>
 								<div className="ml-[20px] mb-[5px]">Express</div>
 								<div className="ml-[20px] mb-[5px]">MongoDB</div>
