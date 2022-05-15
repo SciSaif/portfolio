@@ -368,9 +368,10 @@ h3 {
 
 .image-cover {
     mix-blend-mode: multiply;
-    filter: grayscale(100%) contrast(1) brightness(90%);
+    filter: grayscale(100%) contrast(1) brightness(120%);
     border-radius: var(--border-radius);
     overflow: hidden;
+    transition: var(--transition);
 }
 
 .image-top {
@@ -382,6 +383,9 @@ h3 {
     position: relative;
     cursor: pointer;
 }
+
+
+/* using multiply blend mode, we are blending  */
 
 .image-top::before {
     content: "";
