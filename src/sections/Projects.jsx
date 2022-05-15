@@ -30,16 +30,27 @@ function Projects() {
 				<h1 className="text-theme-gray-light  min-w-fit ml-[10px] text-[26px] sm:text-[32px]  flex justify-center items-center font-calibreSemiBold fontFix">Some things I've built</h1>
 			</div>
 			<div className="flex flex-col  justify-center items-center min-h-full text-[20px] font-calibreRegular text-theme-gray-deep font-medium ">
-				<div className="mb-[100px] flex flex-row ">
-					<div className="max-w-[60%]">
-						<img src={jobbedInHome} alt="JobbedIn home page" />
+				<div className="mb-[100px] flex flex-row w-full h-full ">
+					<div className="max-w-[60%] image-top ">
+						<div className="image-cover bg-black">
+							<img src={jobbedInHome} alt="JobbedIn home page" className="" />
+						</div>
 					</div>
-					<div className="max-w-[40%] w-[40%] flex flex-col items-end h-[100px]">
-						<div className="text-theme-green my-2 font-sfMonoRegular text-[13px]">Featured Project</div>
+					<div className="max-w-[40%] w-[40%] flex flex-col items-end h-full ">
+						<div className="text-theme-green my-2 mt-[40px] font-sfMonoRegular text-[13px]">Featured Project</div>
 						<h1 className="font-calibreSemiBold text-[28px] text-theme-gray-light mb-5">JobbedIn</h1>
 						<div className="relative w-full">
-							<div className="p-6 absolute top-0 right-0 w-[120%] bg-theme-light-navy rounded text-theme-light-slate">
+							<div className="p-6 absolute top-0 right-0 w-[120%] bg-theme-light-navy rounded text-theme-light-slate z-10">
 								<p>A Full Stack Job Portal website for Employers and candidates. Separate accounts for both employers and candidates. </p>
+							</div>
+						</div>
+						<div className="relative w-full">
+							<div className="p-6 flex flex-row  absolute bottom-0 right-0 w-fit  rounded text-theme-light-slate">
+								<div>React</div>
+								<div>Express</div>
+								<div>MongoDB</div>
+								<div>Redux</div>
+								<div>Tailwind CSS</div>
 							</div>
 						</div>
 					</div>

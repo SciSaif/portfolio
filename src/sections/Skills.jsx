@@ -38,7 +38,7 @@ function Skills() {
 									<div className="skillName">{skill.name}</div>
 									<div className="text-theme-green/75">{skill.percent}%</div>
 								</div>
-								<motion.div className="card-container" initial="offscreen" whileInView="onscreen" viewport={{once: true, amount: 0.8}}>
+								<motion.div className="card-container" initial="offscreen" whileInView="onscreen" viewport={{once: false, amount: 0.8}}>
 									<div className="bar w-[300px] sm:w-[250px] md:[250px] lg:w-[300px] xl:w-[400px] h-4 bg-theme-lightest-navy  mb-8">
 										<motion.div className="bar-fill h-full bg-theme-green" variants={cardVariants(skill.percent)}></motion.div>
 									</div>
@@ -56,7 +56,7 @@ function Skills() {
 									<div className="skillName">{skill.name}</div>
 									<div className="text-theme-green/75">{skill.percent}%</div>
 								</div>
-								<motion.div className="card-container" initial="offscreen" whileInView="onscreen" viewport={{once: true, amount: 0.8}}>
+								<motion.div className="card-container" initial="offscreen" whileInView="onscreen" viewport={{once: false, amount: 0.8}}>
 									<div className="bar w-[300px] sm:w-[300px] md-w-[250px] lg-w-[300px]  xl:w-[400px] h-4 bg-theme-lightest-navy  mb-8">
 										<motion.div className="bar-fill h-full bg-theme-green" variants={cardVariants(skill.percent)}></motion.div>
 									</div>

@@ -362,3 +362,45 @@ h3 {
 .skillName:hover {
     transform: translateY(-5px);
 }
+
+
+/* projects */
+
+.image-cover {
+    mix-blend-mode: multiply;
+    filter: grayscale(100%) contrast(1) brightness(90%);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+}
+
+.image-top {
+    width: 100%;
+    height: 100%;
+    background-color: var(--green);
+    border-radius: var(--border-radius);
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+}
+
+.image-top::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    inset: 0px;
+    z-index: 2;
+    transition: var(--transition);
+    background-color: var(--navy);
+    mix-blend-mode: screen;
+    border-radius: var(--border-radius);
+}
+
+.image-top:hover {
+    background-color: transparent;
+}
+
+.image-top:hover .image-cover {
+    mix-blend-mode: normal;
+    filter: none;
+}
