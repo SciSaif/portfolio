@@ -1,6 +1,6 @@
 import React from "react";
 import {motion, Variants} from "framer-motion";
-import data from "../data/data.json";
+import data from "../data/skills.json";
 
 const coreSkills = data.coreTechnicalSkills;
 const otherSkills = data.additionalSkills;

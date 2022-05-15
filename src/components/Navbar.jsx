@@ -60,7 +60,7 @@ function Navbar({toggle}) {
 						<span className="text-theme-green">04. </span> Contact
 					</div>
 					<div className="resume ml-4  border border-theme-green hover:bg-theme-green/10 cursor-pointer rounded flex items-center text-theme-green">
-						<a target="_blank" href="/" className="px-[16px] py-[12px]">
+						<a target="_blank" href="/" className="px-[16px] py-[12px] line">
 							Resume
 						</a>
 					</div>
@@ -88,7 +88,7 @@ function Navbar({toggle}) {
 							<div className="text-theme-green ">04. </div> <div className="mb-2 mt-1">Contact</div>
 						</div>
 						<div className="  mt-9 border border-theme-green rounded flex  items-center text-theme-green">
-							<a target="_blank" href="/" className="px-[50px] py-[18px]">
+							<a target="_blank" href="/" className="px-[50px] py-[18px] line">
 								Resume
 							</a>
 						</div>

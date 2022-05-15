@@ -64,13 +64,13 @@ body::-webkit-scrollbar-thumb {
     background-clip: padding-box;
 }
 
-a {
+a.line {
     color: var(--green);
     display: inline-block;
     position: relative;
 }
 
-a:after {
+a.line:after {
     content: '';
     position: absolute;
     width: 100%;
@@ -83,7 +83,7 @@ a:after {
     transition: transform 0.25s ease-out;
 }
 
-a:hover:after {
+a.line:hover:after {
     transform: scaleX(1);
     transform-origin: bottom left;
 }
@@ -97,6 +97,10 @@ a:hover:after {
  ::selection {
     color: var(--lightest-slate);
     background: var(--lightest-navy);
+}
+
+svg {
+    transition: stroke 0.20s ease-out;
 }
 
 h1,
@@ -407,4 +411,8 @@ h3 {
 .image-top:hover .image-cover {
     mix-blend-mode: normal;
     filter: none;
+}
+
+.project-card {
+    box-shadow: 0 10px 30px -15px var(--navy-shadow);
 }

@@ -21,7 +21,7 @@ function About() {
 					</p>
 					<p className="mb-4">
 						I am currently working on a Job Portal website called{" "}
-						<a target="_blank" rel="noreferrer" href="https://github.com/SciSaif/JobbedIn">
+						<a target="_blank" rel="noreferrer" href="https://github.com/SciSaif/JobbedIn" className="line">
 							JobbedIn
 						</a>{" "}
 						made using MERN stack.
