@@ -1,6 +1,8 @@
 import {useRef} from "react";
 import Left from "./components/Left";
 import Navbar from "./components/Navbar";
+import SideEmail from "./components/SideEmail";
+import SideSocials from "./components/SideSocials";
 import About from "./sections/About";
 import Contact from "./sections/Contact";
 import Credits from "./sections/Credits";
@@ -25,6 +27,9 @@ function App() {
 				<Contact />
 				<Credits />
 			</main>
+			{/* side socials */}
+			<SideSocials />
+			<SideEmail />
 			<Navbar toggle={() => toggleBlur()} />
 		</div>
 	);

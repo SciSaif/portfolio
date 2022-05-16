@@ -56,7 +56,7 @@ function Projects() {
 										index % 2 !== 0 ? "sm:justify-start" : "sm:justify-end"
 									} my-[10px] sm:my-0 rounded text-theme-lightest-slate z-11`}>
 									{project.technologies.map((technology, i) => (
-										<div key={i} className={`${index % 2 !== 0 ? "sm:mr-[20px]" : "sm:ml-[20px]"} mr-[20px] sm:mr-0  mb-[5px] text-[13px] font-sfMonoRegular`}>
+										<div key={i} className={`${index % 2 !== 0 ? "sm:mr-[20px]" : "sm:ml-[20px] sm:mr-0"} mr-[20px]   mb-[5px] text-[13px] font-sfMonoRegular`}>
 											{technology}
 										</div>
 									))}

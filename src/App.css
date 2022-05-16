@@ -422,3 +422,36 @@ h3 {
         box-shadow: 0 10px 30px -15px var(--navy-shadow);
     }
 }
+
+
+/* side socials */
+
+.social-line::after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 90px;
+    margin: 0px auto;
+    background-color: var(--light-slate);
+}
+
+.social-icon-svg {
+    transition: transform 0.15s ease-in-out;
+}
+
+.social-icon-box:hover .social-icon-svg {
+    color: var(--green);
+    transform: translateY(-3px);
+}
+
+.email {
+    writing-mode: vertical-rl;
+    letter-spacing: 0.1em;
+    line-height: 18px;
+    transition: transform 0.15s ease-in-out;
+}
+
+.email:hover {
+    color: var(--green);
+    transform: translateY(-3px);
+}
