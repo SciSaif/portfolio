@@ -30,35 +30,39 @@ function Projects() {
 			</div>
 
 			{projects.map((project, index) => (
-				<div key={index} className="flex flex-col  justify-center items-center min-h-full text-[20px] font-calibreRegular text-theme-gray-deep font-medium mb-[100px]">
-					<div className={`flex flex-row  ${index % 2 !== 0 ? "justify-start" : "justify-end"} w-full relative lg:mt-[50px] `}>
-						<div className={`absolute  top-1/2 translate-y-[-50%] ${index % 2 !== 0 && "flex justify-end"} `}>
-							<a href={project.website} target="_blank" rel="noreferrer" className="max-w-[60%] max-h-[100%] image-top  ">
-								<div className="image-cover ">
-									<img src={project.img} alt="JobbedIn home page" className="" />
+				<div key={index} className="flex flex-col  justify-center items-center min-h-full text-[20px] font-calibreRegular text-theme-gray-deep font-medium mb-[40px] sm:mb-[100px]">
+					<div className={`flex flex-row justify-start ${index % 2 !== 0 ? "sm:justify-start" : "sm:justify-end"} w-full relative lg:mt-[50px] `}>
+						<div className={`absolute  top-1/2 translate-y-[-50%] ${index % 2 !== 0 && "flex justify-end"} object-cover  w-full h-full sm:w-fit sm:h-fit opacity-20 sm:opacity-100`}>
+							<a href={project.website} target="_blank" rel="noreferrer" className="w-full sm:max-w-[60%] h-full image-top  ">
+								<div className="image-cover w-full h-full sm:w-fit sm:h-fit  ">
+									<img src={project.img} alt="JobbedIn home page" className="object-cover w-full h-full sm:w-fit sm:h-fit " />
 								</div>
 							</a>
 						</div>
-						<div className={`max-w-[70%] md:max-w-[60%] lg:max-w-[50%] flex flex-col ${index % 2 !== 0 ? "items-start" : "items-end"}  h-full  z-10`}>
+						<div
+							className={`w-full sm:max-w-[70%] md:max-w-[60%] lg:max-w-[50%] p-6 sm:p-0 flex flex-col items-start ${index % 2 !== 0 ? "sm:items-start" : "sm:items-end"}  h-full  z-10`}>
 							<div className="text-theme-green my-2 font-sfMonoRegular text-[13px] ">Featured Project</div>
 							<a href={project.website} target="_blank" rel="noreferrer" className="font-calibreSemiBold text-[28px] text-theme-gray-light mb-5 hover:text-theme-green cursor-pointer ">
 								{project.title}
 							</a>
 							<div className="relative w-full project-card">
-								<div className="p-6   bg-theme-light-navy rounded text-theme-light-slate z-10">
+								<div className="sm:p-6   sm:bg-theme-light-navy rounded text-theme-light-slate z-10 text-[18px] sm:text-[20px] ">
 									<p>{project.description}</p>
 								</div>
 							</div>
 							<div className=" relative w-full z-10 mt-[25px] ">
-								<div className={`flex flex-row flex-wrap  ${index % 2 !== 0 ? "justify-start" : "justify-end"}  rounded text-theme-light-slate z-11`}>
+								<div
+									className={`flex flex-row flex-wrap justify-start  ${
+										index % 2 !== 0 ? "sm:justify-start" : "sm:justify-end"
+									} my-[10px] sm:my-0 rounded text-theme-lightest-slate z-11`}>
 									{project.technologies.map((technology, i) => (
-										<div key={i} className="ml-[20px] mb-[5px]">
+										<div key={i} className=" mr-[20px] sm:mr-0 sm:ml-[20px] mb-[5px] text-[13px] font-sfMonoRegular">
 											{technology}
 										</div>
 									))}
 								</div>
 							</div>
-							<div className="flex flex-row items-center">
+							<div className="flex flex-row items-center translate-x-[-10px] sm:translate-x-0">
 								<a href={project.github} target="_blank" rel="noreferrer" className="w-[40px] h-[40px] cursor-pointer p-[10px]">
 									<svg
 										xmlns="http://www.w3.org/2000/svg"
