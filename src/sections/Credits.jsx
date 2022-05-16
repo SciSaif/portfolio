@@ -2,7 +2,7 @@ import React from "react";
 
 function Credits() {
 	return (
-		<section className="mb-7 mt-12 max-w-[600px]  text-white/25 flex flex-col justify-center items-center   mx-auto font-sfMonoRegular ">
+		<section id="credits" className="mb-7 mt-12 max-w-[600px]  text-white/25 flex flex-col justify-center items-center   mx-auto font-sfMonoRegular ">
 			<div className="w-fit flex flex-col  mt-[50px] mb-4">
 				<a
 					href="https://github.com/SciSaif"

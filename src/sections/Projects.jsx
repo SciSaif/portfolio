@@ -23,7 +23,7 @@ const cardVariants = (percent) => {
 
 function Projects() {
 	return (
-		<section className="py-[80px] sm:py-[100px] max-w-[1000px]   text-white/25 flex flex-col justify-center   mx-auto font-sfMonoRegular overflow-x-hidden">
+		<section id="projects" className="py-[80px] sm:py-[100px] max-w-[1000px]   text-white/25 flex flex-col justify-center   mx-auto font-sfMonoRegular overflow-x-hidden">
 			<div className="about-heading w-fit flex flex-row  mt-[10px] mb-[40px] ">
 				<div className="text-theme-green flex items-center text-[15px] sm:text-[20px]">03. </div>
 				<h1 className="text-theme-gray-light  min-w-fit ml-[10px] text-[26px] sm:text-[32px]  flex justify-center items-center font-calibreSemiBold fontFix">Some things I've built</h1>

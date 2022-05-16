@@ -2,7 +2,7 @@ import React from "react";
 
 function Contact() {
 	return (
-		<section className="mb-12 py-[80px] sm:py-[100px] max-w-[600px]  text-white/25 flex flex-col justify-center items-center   mx-auto font-sfMonoRegular overflow-x-hidden">
+		<section id="contact" className="mb-12 py-[80px] sm:py-[100px] max-w-[600px]  text-white/25 flex flex-col justify-center items-center   mx-auto font-sfMonoRegular overflow-x-hidden">
 			<div className="w-fit flex flex-row  mt-[10px] mb-4 ">
 				<div className="text-theme-green flex items-center text-[16px] ">04. What's Next?</div>
 			</div>

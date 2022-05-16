@@ -2,7 +2,7 @@ import React from "react";
 
 function Hero() {
 	return (
-		<section className="h-screen max-w-[1000px]  text-white/25 flex flex-col justify-center   mx-auto font-sfMonoRegular">
+		<section id="hero" className="h-screen max-w-[1000px]  text-white/25 flex flex-col justify-center   mx-auto font-sfMonoRegular">
 			<div className="">
 				<h1 className="text-theme-green mb-[15px] ml-[4px] ">Hi, my name is </h1>
 			</div>

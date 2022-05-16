@@ -1,5 +1,7 @@
 import React, {useRef, useEffect} from "react";
 import logo from "../assets/logo-42.png";
+import {Link} from "react-scroll";
+import resume from "../assets/resume.pdf";
 
 function useOutsideAlerter(ref, toggleDrawer) {
 	useEffect(() => {
@@ -41,26 +43,26 @@ function Navbar({toggle}) {
 	useOutsideAlerter(drawerRef, toggleDrawer);
 
 	return (
-		<header className="navbar h-[100px] px-[25px] md:px-[40px] lg:px-[50px] flex justify-between items-center text-theme-lightest-slate font-sfMonoRegular ">
+		<header className="navbar h-[100px] px-[25px] md:px-[40px] lg:px-[50px] flex justify-between items-center text-theme-lightest-slate font-sfMonoRegular z-[100]">
 			<nav className="w-full  flex flex-row justify-between items-center">
-				<div className="my-auto">
+				<Link to="hero" spy={true} smooth={true} offset={0} duration={500} className="my-auto cursor-pointer">
 					<img src={logo} alt="logo" />
-				</div>
+				</Link>
 				<div className="hidden sm:flex flex-row text-[13px] ">
-					<div className="p-[10px]  font-poppins mx-1 cursor-pointer hover:text-theme-green">
+					<Link to="about" spy={true} smooth={true} offset={0} duration={500} className="p-[10px]  font-poppins mx-1 cursor-pointer hover:text-theme-green">
 						<span className="text-theme-green">01. </span> About
-					</div>
-					<div className="p-[10px]  font-poppins mx-1 cursor-pointer hover:text-theme-green">
-						<span className="text-theme-green">02. </span> Experience
-					</div>
-					<div className="p-[10px]  font-poppins mx-1 cursor-pointer hover:text-theme-green">
-						<span className="text-theme-green">03. </span> Work
-					</div>
-					<div className="p-[10px]  font-poppins mx-1 cursor-pointer hover:text-theme-green">
+					</Link>
+					<Link to="skills" spy={true} smooth={true} offset={0} duration={500} className="p-[10px]  font-poppins mx-1 cursor-pointer hover:text-theme-green">
+						<span className="text-theme-green">02. </span> Skills
+					</Link>
+					<Link to="projects" spy={true} smooth={true} offset={0} duration={500} className="p-[10px]  font-poppins mx-1 cursor-pointer hover:text-theme-green">
+						<span className="text-theme-green">03. </span> Projects
+					</Link>
+					<Link to="contact" spy={true} smooth={true} offset={0} duration={500} className="p-[10px]  font-poppins mx-1 cursor-pointer hover:text-theme-green">
 						<span className="text-theme-green">04. </span> Contact
-					</div>
+					</Link>
 					<div className="resume ml-4  border border-theme-green hover:bg-theme-green/10 cursor-pointer rounded flex items-center text-theme-green">
-						<a target="_blank" href="/" className="px-[16px] py-[12px] line">
+						<a target="_blank" href={resume} rel="noreferrer" className="px-[16px] py-[12px] line">
 							Resume
 						</a>
 					</div>
@@ -75,20 +77,48 @@ function Navbar({toggle}) {
 
 				<aside className="drawer drawer-hidden" ref={drawerRef}>
 					<div className="flex-row text-[16px] ">
-						<div className="p-[10px] flex flex-col justify-center  items-center font-poppins mx-1 cursor-pointer hover:text-theme-green">
+						<Link
+							to="about"
+							spy={true}
+							smooth={true}
+							offset={0}
+							duration={500}
+							onClick={() => toggleDrawer()}
+							className="p-[10px] flex flex-col justify-center  items-center font-poppins mx-1 cursor-pointer hover:text-theme-green">
 							<div className="text-theme-green ">01. </div> <div className="mb-2 mt-1">About</div>
-						</div>
-						<div className="p-[10px] flex flex-col justify-center  items-center  font-poppins mx-1 cursor-pointer hover:text-theme-green">
+						</Link>
+						<Link
+							to="skills"
+							spy={true}
+							smooth={true}
+							offset={0}
+							duration={500}
+							onClick={() => toggleDrawer()}
+							className="p-[10px] flex flex-col justify-center  items-center  font-poppins mx-1 cursor-pointer hover:text-theme-green">
 							<div className="text-theme-green ">02. </div> <div className="mb-2 mt-1">Skills</div>
-						</div>
-						<div className="p-[10px] flex flex-col justify-center  items-center  font-poppins mx-1 cursor-pointer hover:text-theme-green">
+						</Link>
+						<Link
+							to="projects"
+							spy={true}
+							smooth={true}
+							offset={0}
+							duration={500}
+							onClick={() => toggleDrawer()}
+							className="p-[10px] flex flex-col justify-center  items-center  font-poppins mx-1 cursor-pointer hover:text-theme-green">
 							<div className="text-theme-green ">03. </div> <div className="mb-2 mt-1">Projects</div>
-						</div>
-						<div className="p-[10px] flex flex-col justify-center  items-center  font-poppins mx-1 cursor-pointer hover:text-theme-green">
+						</Link>
+						<Link
+							to="contact"
+							spy={true}
+							smooth={true}
+							offset={0}
+							duration={500}
+							onClick={() => toggleDrawer()}
+							className="p-[10px] flex flex-col justify-center  items-center  font-poppins mx-1 cursor-pointer hover:text-theme-green">
 							<div className="text-theme-green ">04. </div> <div className="mb-2 mt-1">Contact</div>
-						</div>
+						</Link>
 						<div className="  mt-9 border border-theme-green rounded flex  items-center text-theme-green">
-							<a target="_blank" href="/" className="px-[50px] py-[18px] line">
+							<a target="_blank" href={resume} rel="noreferrer" className="px-[50px] py-[18px] line">
 								Resume
 							</a>
 						</div>
