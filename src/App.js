@@ -2,6 +2,8 @@ import {useRef} from "react";
 import Left from "./components/Left";
 import Navbar from "./components/Navbar";
 import About from "./sections/About";
+import Contact from "./sections/Contact";
+import Credits from "./sections/Credits";
 import Hero from "./sections/Hero";
 import Projects from "./sections/Projects";
 import Skills from "./sections/Skills";
@@ -20,6 +22,8 @@ function App() {
 				<About />
 				<Skills />
 				<Projects />
+				<Contact />
+				<Credits />
 			</main>
 			<Navbar toggle={() => toggleBlur()} />
 		</div>

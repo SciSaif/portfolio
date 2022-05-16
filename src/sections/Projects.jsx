@@ -100,8 +100,6 @@ function Projects() {
 					</div>
 				</div>
 			))}
-
-			<div className="h-[500px]"></div>
 		</section>
 	);
 }

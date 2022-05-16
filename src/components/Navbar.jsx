@@ -79,10 +79,10 @@ function Navbar({toggle}) {
 							<div className="text-theme-green ">01. </div> <div className="mb-2 mt-1">About</div>
 						</div>
 						<div className="p-[10px] flex flex-col justify-center  items-center  font-poppins mx-1 cursor-pointer hover:text-theme-green">
-							<div className="text-theme-green ">02. </div> <div className="mb-2 mt-1">Experience</div>
+							<div className="text-theme-green ">02. </div> <div className="mb-2 mt-1">Skills</div>
 						</div>
 						<div className="p-[10px] flex flex-col justify-center  items-center  font-poppins mx-1 cursor-pointer hover:text-theme-green">
-							<div className="text-theme-green ">03. </div> <div className="mb-2 mt-1">Work</div>
+							<div className="text-theme-green ">03. </div> <div className="mb-2 mt-1">Projects</div>
 						</div>
 						<div className="p-[10px] flex flex-col justify-center  items-center  font-poppins mx-1 cursor-pointer hover:text-theme-green">
 							<div className="text-theme-green ">04. </div> <div className="mb-2 mt-1">Contact</div>
