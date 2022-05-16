@@ -56,13 +56,13 @@ function Projects() {
 										index % 2 !== 0 ? "sm:justify-start" : "sm:justify-end"
 									} my-[10px] sm:my-0 rounded text-theme-lightest-slate z-11`}>
 									{project.technologies.map((technology, i) => (
-										<div key={i} className=" mr-[20px] sm:mr-0 sm:ml-[20px] mb-[5px] text-[13px] font-sfMonoRegular">
+										<div key={i} className={`${index % 2 !== 0 ? "sm:mr-[20px]" : "sm:ml-[20px]"} mr-[20px] sm:mr-0  mb-[5px] text-[13px] font-sfMonoRegular`}>
 											{technology}
 										</div>
 									))}
 								</div>
 							</div>
-							<div className="flex flex-row items-center translate-x-[-10px] sm:translate-x-0">
+							<div className={`flex flex-row items-center translate-x-[-10px]  ${index % 2 !== 0 ? "sm:translate-x-[-10px]" : "sm:translate-x-[10px]"}`}>
 								<a href={project.github} target="_blank" rel="noreferrer" className="w-[40px] h-[40px] cursor-pointer p-[10px]">
 									<svg
 										xmlns="http://www.w3.org/2000/svg"
