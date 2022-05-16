@@ -416,3 +416,9 @@ h3 {
 .project-card {
     box-shadow: 0 10px 30px -15px var(--navy-shadow);
 }
+
+@media (max-width: 640px) {
+    .project-box {
+        box-shadow: 0 10px 30px -15px var(--navy-shadow);
+    }
+}

@@ -30,7 +30,7 @@ function Projects() {
 			</div>
 
 			{projects.map((project, index) => (
-				<div key={index} className="flex flex-col  justify-center items-center min-h-full text-[20px] font-calibreRegular text-theme-gray-deep font-medium mb-[40px] sm:mb-[100px]">
+				<div key={index} className="project-box flex flex-col  justify-center items-center min-h-full text-[20px] font-calibreRegular text-theme-gray-deep font-medium mb-[40px] sm:mb-[100px]">
 					<div className={`flex flex-row justify-start ${index % 2 !== 0 ? "sm:justify-start" : "sm:justify-end"} w-full relative lg:mt-[50px] `}>
 						<div className={`absolute  top-1/2 translate-y-[-50%] ${index % 2 !== 0 && "flex justify-end"} object-cover  w-full h-full sm:w-fit sm:h-fit opacity-20 sm:opacity-100`}>
 							<a href={project.website} target="_blank" rel="noreferrer" className="w-full sm:max-w-[60%] h-full image-top  ">

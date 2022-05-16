@@ -16,5 +16,13 @@ export const data = {
 			website: "https://to-do-list-scisaif.vercel.app/",
 			img: require("@assets/toDoListHome.png"),
 		},
+		{
+			title: "My Portfolio website",
+			description: "This is my portfolio website that I created using react and tailwind. The design for this website was inspired by Brittany Chiang's portfolio website. ",
+			technologies: ["React", "Tailwind CSS", "Framer Motion", "react-scroll"],
+			github: "https://github.com/SciSaif/portfolio",
+			website: "https://portfolio-scisaif.vercel.app/",
+			img: require("@assets/portfolioHome.png"),
+		},
 	],
 };
