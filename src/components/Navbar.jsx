@@ -19,6 +19,21 @@ const startVariants = {
 	},
 };
 
+const pathVariants = {
+	initial: {
+		opacity: 0,
+		pathLength: 0,
+	},
+	end: {
+		opacity: 1,
+		pathLength: 1,
+		transition: {
+			duration: 2,
+			ease: "easeInOut",
+		},
+	},
+};
+
 const childVariants = {
 	initial: {
 		y: -30,
@@ -77,9 +92,25 @@ function Navbar({toggle}) {
 	return (
 		<header className="navbar h-[100px] px-[25px] md:px-[40px] lg:px-[50px] flex justify-between items-center text-theme-lightest-slate font-sfMonoRegular z-[100]">
 			<nav className="w-full  flex flex-row justify-between items-center">
-				<motion.div initial={{opacity: 0}} animate={{opacity: 1}} transition={{type: "tween", duration: 0.5}}>
-					<Link to="hero" spy={true} smooth={true} offset={0} duration={500} className="my-auto cursor-pointer">
-						<img src={logo} alt="logo" />
+				<motion.div initial={{opacity: 0}} animate={{opacity: 1}} transition={{type: "tween", duration: 0.5}} className="my-auto cursor-pointer min-w-[43px]  ">
+					<Link to="hero" spy={true} smooth={true} offset={0} duration={500} className="my-auto cursor-pointer min-w-[43px]  ">
+						{/* <img src={logo} alt="logo" /> */}
+						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 100 100">
+							<text fill="#64FFDA" fontFamily="Calibre-Medium, Calibre" fontSize="50" fontWeight="400" letterSpacing="4.167" opacity="1" transform="translate(36 33)">
+								<tspan x="0.142" y="33">
+									S
+								</tspan>
+							</text>
+							<motion.path
+								variants={pathVariants}
+								initial="initial"
+								animate="end"
+								stroke="#64FFDA"
+								strokeLinecap="round"
+								strokeLinejoin="round"
+								strokeWidth="5"
+								d="M50 5L11 27v45l39 23 39-22V28z"></motion.path>
+						</svg>
 					</Link>
 				</motion.div>
 				<motion.div className="hidden sm:flex flex-row text-[13px] " initial="initial" animate="end" variants={startVariants}>
