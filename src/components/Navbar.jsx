@@ -2,6 +2,38 @@ import React, {useRef, useEffect} from "react";
 import logo from "../assets/logo-42.png";
 import {Link} from "react-scroll";
 import resume from "../assets/resume.pdf";
+import {motion} from "framer-motion";
+
+const startVariants = {
+	initial: {
+		opacity: 0,
+	},
+	end: {
+		opacity: 1,
+		transition: {
+			type: "tween",
+			bounce: 0.4,
+			duration: 0.1,
+			staggerChildren: 0.1,
+		},
+	},
+};
+
+const childVariants = {
+	initial: {
+		y: -30,
+		opacity: 0,
+	},
+	end: {
+		y: 0,
+		opacity: 1,
+		transition: {
+			type: "tween",
+			bounce: 0.4,
+			duration: 0.8,
+		},
+	},
+};
 
 function useOutsideAlerter(ref, toggleDrawer) {
 	useEffect(() => {
@@ -45,28 +77,38 @@ function Navbar({toggle}) {
 	return (
 		<header className="navbar h-[100px] px-[25px] md:px-[40px] lg:px-[50px] flex justify-between items-center text-theme-lightest-slate font-sfMonoRegular z-[100]">
 			<nav className="w-full  flex flex-row justify-between items-center">
-				<Link to="hero" spy={true} smooth={true} offset={0} duration={500} className="my-auto cursor-pointer">
-					<img src={logo} alt="logo" />
-				</Link>
-				<div className="hidden sm:flex flex-row text-[13px] ">
-					<Link to="about" spy={true} smooth={true} offset={0} duration={500} className="p-[10px]  font-poppins mx-1 cursor-pointer hover:text-theme-green">
-						<span className="text-theme-green">01. </span> About
+				<motion.div initial={{opacity: 0}} animate={{opacity: 1}} transition={{type: "tween", duration: 0.5}}>
+					<Link to="hero" spy={true} smooth={true} offset={0} duration={500} className="my-auto cursor-pointer">
+						<img src={logo} alt="logo" />
 					</Link>
-					<Link to="skills" spy={true} smooth={true} offset={0} duration={500} className="p-[10px]  font-poppins mx-1 cursor-pointer hover:text-theme-green">
-						<span className="text-theme-green">02. </span> Skills
-					</Link>
-					<Link to="projects" spy={true} smooth={true} offset={0} duration={500} className="p-[10px]  font-poppins mx-1 cursor-pointer hover:text-theme-green">
-						<span className="text-theme-green">03. </span> Projects
-					</Link>
-					<Link to="contact" spy={true} smooth={true} offset={0} duration={500} className="p-[10px]  font-poppins mx-1 cursor-pointer hover:text-theme-green">
-						<span className="text-theme-green">04. </span> Contact
-					</Link>
-					<div className="resume ml-4  border border-theme-green hover:bg-theme-green/10 cursor-pointer rounded flex items-center text-theme-green">
+				</motion.div>
+				<motion.div className="hidden sm:flex flex-row text-[13px] " initial="initial" animate="end" variants={startVariants}>
+					<motion.div className="p-[10px]" variants={childVariants}>
+						<Link to="about" spy={true} smooth={true} offset={0} duration={500} className="  font-poppins mx-1 cursor-pointer hover:text-theme-green">
+							<span className="text-theme-green">01. </span> About
+						</Link>
+					</motion.div>
+					<motion.div className="p-[10px]" variants={childVariants}>
+						<Link to="skills" spy={true} smooth={true} offset={0} duration={500} className="  font-poppins mx-1 cursor-pointer hover:text-theme-green">
+							<span className="text-theme-green">02. </span> Skills
+						</Link>
+					</motion.div>
+					<motion.div className="p-[10px]" variants={childVariants}>
+						<Link to="projects" spy={true} smooth={true} offset={0} duration={500} className="  font-poppins mx-1 cursor-pointer hover:text-theme-green">
+							<span className="text-theme-green">03. </span> Projects
+						</Link>
+					</motion.div>
+					<motion.div className="p-[10px]" variants={childVariants}>
+						<Link to="contact" spy={true} smooth={true} offset={0} duration={500} className="  font-poppins mx-1 cursor-pointer hover:text-theme-green">
+							<span className="text-theme-green">04. </span> Contact
+						</Link>
+					</motion.div>
+					<motion.div className="resume ml-4  border border-theme-green hover:bg-theme-green/10 cursor-pointer rounded flex items-center text-theme-green" variants={childVariants}>
 						<a target="_blank" href={resume} rel="noreferrer" className="px-[16px] py-[12px] line">
 							Resume
 						</a>
-					</div>
-				</div>
+					</motion.div>
+				</motion.div>
 
 				{/* mobile nav menu button */}
 				<button className="menuBtn sm:hidden" onClick={toggleDrawer}>

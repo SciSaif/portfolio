@@ -1,8 +1,24 @@
+import {motion} from "framer-motion";
 import React from "react";
+
+const startVariants = {
+	initial: {
+		y: 1000,
+	},
+	end: {
+		y: 0,
+		transition: {
+			type: "tween",
+			bounce: 0.4,
+			duration: 0.8,
+			delay: 1,
+		},
+	},
+};
 
 function SideSocials() {
 	return (
-		<div className="hidden md:flex flex-col fixed bottom-0 md:left-5 lg:left-9 social-line min-w-[40px]">
+		<motion.div className="hidden md:flex flex-col fixed bottom-0 md:left-5 lg:left-9 social-line min-w-[40px]" initial="initial" animate="end" variants={startVariants}>
 			<div className="flex flex-row items-center mb-2 social-icon-box">
 				<a href="https://github.com/SciSaif" target="_blank" rel="noreferrer" className="w-[40px] h-[40px] cursor-pointer p-[10px]">
 					<svg
@@ -75,7 +91,7 @@ function SideSocials() {
 					</svg>
 				</a>
 			</div>
-		</div>
+		</motion.div>
 	);
 }
 

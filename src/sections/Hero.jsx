@@ -1,8 +1,24 @@
+import {motion} from "framer-motion";
 import React from "react";
+
+const startVariants = {
+	initial: {
+		opacity: 0,
+	},
+	end: {
+		opacity: 1,
+		transition: {
+			type: "tween",
+			bounce: 0.4,
+			duration: 0.4,
+			delay: 1,
+		},
+	},
+};
 
 function Hero() {
 	return (
-		<section id="hero" className="h-screen max-w-[1000px]  text-white/25 flex flex-col justify-center   mx-auto font-sfMonoRegular">
+		<motion.section id="hero" className="h-screen max-w-[1000px]  text-white/25 flex flex-col justify-center   mx-auto font-sfMonoRegular" initial="initial" animate="end" variants={startVariants}>
 			<div className="">
 				<h1 className="text-theme-green mb-[15px] ml-[4px] ">Hi, my name is </h1>
 			</div>
@@ -16,7 +32,7 @@ function Hero() {
 					Check out my github!
 				</a>
 			</div>
-		</section>
+		</motion.section>
 	);
 }
 
