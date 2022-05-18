@@ -111,11 +111,11 @@ function Navbar({toggle}) {
 				</motion.div>
 
 				{/* mobile nav menu button */}
-				<button className="menuBtn sm:hidden" onClick={toggleDrawer}>
+				<motion.button className="menuBtn sm:hidden" onClick={toggleDrawer} initial={{opacity: 0}} animate={{opacity: 1}} transition={{type: "tween", duration: 0.5}}>
 					<div className="ham-box">
 						<div className="ham-box-inner" ref={hamRef}></div>
 					</div>
-				</button>
+				</motion.button>
 
 				<aside className="drawer drawer-hidden" ref={drawerRef}>
 					<div className="flex-row text-[16px] ">

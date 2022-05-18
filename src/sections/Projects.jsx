@@ -1,6 +1,7 @@
 import React from "react";
 import {motion, Variants} from "framer-motion";
 import jobbedInHome from "@assets/jobbedInHome.png";
+import {animateSection} from "../utils/animateSection";
 
 import {data} from "../data/projects.js";
 const projects = data.projects;
@@ -104,4 +105,8 @@ function Projects() {
 	);
 }
 
-export default Projects;
+function animatedSection() {
+	return animateSection(Projects);
+}
+
+export default animatedSection;

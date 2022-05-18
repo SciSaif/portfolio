@@ -1,5 +1,7 @@
 import React from "react";
 import ProfilePic from "../assets/saifSquare.jpg";
+import {animate, motion} from "framer-motion";
+import {animateSection} from "../utils/animateSection";
 
 function About() {
 	return (
@@ -44,4 +46,8 @@ function About() {
 	);
 }
 
-export default About;
+function animatedSection() {
+	return animateSection(About);
+}
+
+export default animatedSection;

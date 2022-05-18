@@ -1,4 +1,5 @@
 import React from "react";
+import {animateSection} from "../utils/animateSection";
 
 function Contact() {
 	return (
@@ -24,4 +25,8 @@ function Contact() {
 	);
 }
 
-export default Contact;
+function animatedSection() {
+	return animateSection(Contact);
+}
+
+export default animatedSection;

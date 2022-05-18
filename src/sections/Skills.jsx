@@ -1,5 +1,6 @@
 import React from "react";
-import {motion, Variants} from "framer-motion";
+import {motion} from "framer-motion";
+import {animateSection} from "../utils/animateSection";
 import data from "../data/skills.json";
 
 const coreSkills = data.coreTechnicalSkills;
@@ -70,4 +71,8 @@ function Skills() {
 	);
 }
 
-export default Skills;
+function animatedSection() {
+	return animateSection(Skills);
+}
+
+export default animatedSection;
