@@ -3,23 +3,23 @@
     "name": "Saifullah Rahman - Portfolio",
     "icons": [
       {
-        "src": "favicon.png",
+        "src": "Icon-16.png",
         "sizes": "16x16",
         "type": "image/png"
       },
       {
-        "src": "JobbedIn-Logo-192x192.png",
+        "src": "Icon-196.png",
         "type": "image/png",
         "sizes": "192x192"
       },
       {
-        "src": "JobbedIn-Logo-512x512.png",
+        "src": "Icon-512.png",
         "type": "image/png",
         "sizes": "512x512"
       }
     ],
     "start_url": ".",
     "display": "standalone",
-    "theme_color": "#82f2e5",
-    "background_color": "#041930"
+    "theme_color": "#64ffda",
+    "background_color": "#0a192f"
   }
