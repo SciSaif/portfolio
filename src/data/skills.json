@@ -27,6 +27,10 @@
         {
             "name": "Python",
             "percent": 40
+        }, 
+        {
+            "name": "Next.js", 
+            "percent": 70
         }
     ],
 
@@ -55,6 +59,10 @@
         {
             "name": "C#",
             "percent": 30
+        },
+        {
+            "name": "SQL", 
+            "percent": 50
         },
         {
             "name": "Data Structures & Algorithms",
