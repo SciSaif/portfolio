@@ -18,22 +18,22 @@ function About() {
 						Coding.
 					</p>
 					<p className="mb-4">
-						Fast forward today, and I have become a Full Stack Web Developer experienced in creating many web applications. Right now I am learning new technologies, especially on the
-						frontend side.
+						Fast forward today, and I have become a Full Stack Web Developer experienced in creating many web applications. Right now I am learning new technologies, and I am looking for a
+						place to apply my skills and knowledge to real world problems.
 					</p>
 					<p className="mb-4">
-						I am currently working on a Job Portal website called{" "}
+						I am currently working on a chat and video calling website {""}
 						<a target="_blank" rel="noreferrer" href="https://github.com/SciSaif/JobbedIn" className="line">
-							JobbedIn
+							SciMeet
 						</a>{" "}
-						made using MERN stack.
+						made using MERN stack, socket.io and webrtc. 
 					</p>
 					<p className="mb-4">Here are a few technologies I’ve been working with recently:</p>
 					<div className="recent-skills">
-						<div className="recent-skills-skill relative mb-[10px] pl-[20px] font-sfMonoRegular text-[14px]">Javascript (ES6+)</div>
-						<div className="recent-skills-skill relative mb-[10px] pl-[20px] font-sfMonoRegular text-[14px]">React.js</div>
-						<div className="recent-skills-skill relative mb-[10px] pl-[20px] font-sfMonoRegular text-[14px]">Express.js</div>
-						<div className="recent-skills-skill relative mb-[10px] pl-[20px] font-sfMonoRegular text-[14px]">MongoDB</div>
+						<div className="recent-skills-skill relative mb-[10px] pl-[20px] font-sfMonoRegular text-[14px]">Typescript </div>
+						<div className="recent-skills-skill relative mb-[10px] pl-[20px] font-sfMonoRegular text-[14px]">Next.js</div>
+						<div className="recent-skills-skill relative mb-[10px] pl-[20px] font-sfMonoRegular text-[14px]">Socket.io</div>
+						<div className="recent-skills-skill relative mb-[10px] pl-[20px] font-sfMonoRegular text-[14px]">WebRTC</div>
 					</div>
 				</div>
 				<div className="mx-auto mt-16 md:mt-0 ">

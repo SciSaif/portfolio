@@ -20,7 +20,7 @@ function App() {
 
 	return (
 		<div>
-			<Canvas />
+			{/* <Canvas /> */}
 			<main className="h-screen px-[25px] sm:px-[50px] md:px-[100px] lg:px-[150px]" ref={mainRef}>
 				<Hero />
 				<About />

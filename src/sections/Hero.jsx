@@ -37,8 +37,7 @@ function Hero() {
 			<h2 className="name-heading font-calibreRegular text-[40px] font-bold text-theme-gray-light pt-0">Saifullah Rahman.</h2>
 			<h3 className="sub-heading font-calibreRegular text-[40px] font-bold text-theme-gray-deep pt-0 ">I build cool stuff for the web.</h3>
 			<p className="bio max-w-[540px] mt-[20px] text-[20px] text-theme-gray-deep font-calibreRegular">
-				I'm a full stack web developer with a passion for building beautiful, responsive websites. I am currently focusing on the MERN stack
-				and I am looking to expand my knowledge and skillset.
+			Experienced in developing and deploying full-featured, robust and scalable web applications from scratch to production
 			</p>
 			<div
 				ref={btnRef}
