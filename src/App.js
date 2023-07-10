@@ -1,4 +1,5 @@
 import {useRef} from "react";
+import Canvas from "./components/Canvas";
 import Left from "./components/Left";
 import Navbar from "./components/Navbar";
 import SideEmail from "./components/SideEmail";
@@ -19,6 +20,7 @@ function App() {
 
 	return (
 		<div>
+			<Canvas />
 			<main className="h-screen px-[25px] sm:px-[50px] md:px-[100px] lg:px-[150px]" ref={mainRef}>
 				<Hero />
 				<About />
